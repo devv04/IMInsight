@@ -1,0 +1,192 @@
+/* Global Reset and Layout */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; /* Sleek new font */
+  background-color: #1A2A44;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+/* Fullscreen Upload Container */
+.upload-container {
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #1A2A44;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-color: #FFD700 #1A2A44;
+  scrollbar-width: thin;
+}
+
+.upload-container::-webkit-scrollbar {
+  width: 8px;
+}
+.upload-container::-webkit-scrollbar-track {
+  background: #1A2A44;
+}
+.upload-container::-webkit-scrollbar-thumb {
+  background-color: #FFD700;
+  border-radius: 4px;
+}
+
+/* Header */
+.navy-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #1A2A44;
+  border-bottom: 2px solid #FFD700;
+}
+
+.navy-header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #FFD700;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Mission Brief */
+.mission-brief {
+  margin-bottom: 20px;
+}
+
+.mission-brief h2 {
+  color: #FFD700;
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.mission-brief label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.mission-brief input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #FFD700;
+  border-radius: 4px;
+  background-color: #1A2A44;
+  color: #FFFFFF;
+}
+
+.mission-brief button {
+  background-color: #FFD700;
+  color: #1A2A44;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.mission-brief button:disabled {
+  background-color: #A9A9A9;
+  cursor: not-allowed;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+  margin-top: 12px;
+  width: 100%;
+  background-color: #1A2A44;
+  border: 1px solid #FFD700;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #FFD700;
+  transition: width 0.2s ease-in-out;
+}
+
+/* Image Preview & Zoom */
+.preview-section {
+  margin-top: 30px;
+}
+
+.image-preview h3,
+.geotiff-preview h3 {
+  font-size: 18px;
+  color: #FFD700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.image-preview img {
+  border: 1px solid #FFD700;
+  border-radius: 8px;
+  max-width: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.zoom-controls {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.zoom-controls button {
+  margin: 0 6px;
+  padding: 6px 14px;
+  background-color: #FFD700;
+  color: #1A2A44;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* GeoTIFF Map Preview */
+.geotiff-preview .map-container {
+  height: 400px;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+/* Mission Log */
+.mission-log {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #2c2c3e;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.mission-log h3 {
+  color: #FFD700;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.mission-log ul {
+  padding-left: 20px;
+}
+
+.mission-log li {
+  margin-bottom: 5px;
+}
+
+.mission-log p {
+  color: #DDD;
+}
+
+/* Leaflet Popup */
+.leaflet-popup-content-wrapper {
+  background-color: #2A4066;
+  color: #FFD700;
+  border-radius: 5px;
+}
