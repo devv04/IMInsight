@@ -16,26 +16,6 @@ IMInsight is an AI-powered image analysis platform tailored for naval and underw
 
 🔍 Anomaly detection (crowds, unusual objects) (in progress)
 
-🗂️ Folder Structure
-bash
-Copy
-Edit
-IMInsight/
-├── backend/
-│   ├── app.py                # Flask server
-│   ├── detect.py             # YOLOv8 inference logic
-│   ├── caption.py            # (Optional) Image captioning
-│   └── static/uploads/       # Uploaded and result images
-├── frontend/                 # React app (UI for upload & display)
-│   ├── src/
-│   │   ├── components/       # Upload interface, map, output display
-│   │   └── App.jsx
-├── models/                   # YOLOv8 model weights (ignored in .gitignore)
-├── data/
-│   └── suim/, cleansea/, ... # Training datasets
-├── README.md
-├── requirements.txt
-└── .gitignore
 🚀 Getting Started
 1️⃣ Clone the Repo
 bash
