@@ -6,10 +6,6 @@ IMInsight is an AI-powered image analysis platform tailored for naval and underw
 
 🐠 Underwater object classification (fish, coral, wrecks, etc.)
 
-🧹 Marine debris detection using CleanSea & SUIM datasets
-
-🧠 Image captioning & interpretation with OpenAI GPT (planned)
-
 🌐 Sleek front-end (React.js) + Flask backend integration
 
 🗺️ Geo-visualization with Leaflet.js (planned)
@@ -33,7 +29,7 @@ venv\Scripts\activate  # or source venv/bin/activate (Mac/Linux)
 pip install -r requirements.txt
 python app.py
 3️⃣ Frontend Setup (React)
-bash
+
 Copy
 Edit
 cd frontend
@@ -48,16 +44,11 @@ Training Platform: Roboflow + Local (Ultralytics)
 
 Datasets:
 
-SUIM – Underwater segmentation
-
-CleanSea Dataset – Marine debris
 
 Brackish (Roboflow) – Marine life detection
 
 Custom-labeled underwater images (110+ samples)
 
-💡 Planned Enhancements
-GPT-4 captioning & QA for detected objects
 
 Real-time ship classification
 
@@ -65,17 +56,13 @@ Geo-mapping with Leaflet.js
 
 Naval-specific anomaly detection
 
-Integration with remote sensing feeds (satellite, drone)
-
 🎯 Training Command Example
-bash
+
 Copy
 Edit
 yolo detect train model=yolov8n.pt data=data.yaml epochs=50 imgsz=640
 🧠 Example Use Cases
-Naval patrol image analysis
-
-Marine debris cleanup operations
+patrol image analysis
 
 Autonomous underwater vehicle (AUV) vision
 
